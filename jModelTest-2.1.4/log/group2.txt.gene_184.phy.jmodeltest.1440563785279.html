@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+	<title>jModelTest Output</title>
+
+	<link rel="stylesheet" href="resources/style.css" type="text/css" media="screen" />
+	<!--[if IE]>
+	<style type="text/css">
+	  .clearfix {
+		zoom: 1;
+		display: block; 
+		} 
+	</style>
+	<![endif]-->
+
+</head>
+
+<body>
+
+<div id="container1">
+<div id="container2">
+ 
+	<div id="header">
+		<div id="logo">
+			<a href="http://code.google.com/p/jmodeltest2">
+				<img src="resources/logo0.png" style="width:129px; height:80px;"/>
+			</a>
+		</div>
+		<div id="header-links">
+			<ul>
+				<li  class="header_button"><a href="http://code.google.com/p/jmodeltest2" title="Home">Home</a></li>
+				<li  class="header_button_span"><a href="https://groups.google.com/group/jmodeltest" title="Group">Discussion group</a></li>
+				<li  class="header_button"><a href="https://groups.google.com/forum/#!forum/jmodeltest" title="Forum">Forum</a></li>
+				<li  class="header_button"><a href="mailto:ddarriba@udc.es" title="Contact">Contact</a></li>
+			</ul>
+		</div>
+		<div id="menul1">
+			<ul>
+				<li  class="selection_button"><a href="#program-meta" title="Meta">Meta</a></li>
+				<li  class="selection_button"><a href="#settings" title="Settings">Settings</a></li>
+				<li  class="selection_button"><a href="#results" title="Input Data">Results</a></li>
+					<li class="selection_button_span"><a>Selection</a></li>
+
+			</ul>
+		</div>
+		<div id="menul2">
+			<ul>
+									<li  class="selection_button_na">
+					<a href="#aic" title="AIC">AIC</a></li>
+					<li  class="selection_button_na">
+					<a href="#aicc" title="AICc">AICc</a></li>
+					<li  class="selection_button">
+					<a href="#bic" title="BIC">BIC</a></li>
+					<li  class="selection_button_na">
+					<a href="#dt" title="DT">DT</a></li>
+			</ul>
+		</div><!--menu-->
+		<div style="clear:both;"></div>
+	</div><!--header-->
+
+<div id="clearfix">
+
+<div id="page">
+		<div id="content">
+
+<div id="program-meta">
+	<h1><a name="program-meta"></a>Application Meta</h1>
+	<h3>jModeltest 2.1</h3>
+	(c) 2011-onwards D. Darriba, G.L. Taboada, R. Doallo and D. Posada,<br/>
+    (1) Department of Biochemistry, Genetics and Immunology<br/>
+        University of Vigo, 36310 Vigo, Spain.<br/>
+    (2) Department of Electronics and Systems<br/>
+        University of A Coruna, 15071 A Coruna, Spain.<br/>
+    e-mail: ddarriba@udc.es, dposada@uvigo.es<br/>
+<br/>
+	<hr/>
+	Wed Aug 26 00:36:25 EDT 2015 <br/> Linux 3.13.0-49-generic, arch: amd64, bits: 64, numcores: 8<br/>
+	
+	<p></p> 
+	<table align="center">
+	<tr valign="top"><td>Citation:</td><td align="left"> Darriba D, Taboada GL, Doallo R and Posada D. 2012. "jModelTest 2: more models, new heuristics and parallel computing". Nature Methods 9, 772.</td></tr>
+    </table>
+	<p></p>
+
+	 
+	Notice: This program may contain errors. Please inspect results carefully.<br/>
+	 <br/>
+ 
+</div>
+
+<p class="back-to-top"><a href="#" onclick="scrollTo(0,0);return false;" title="Back to top" class="top"><img src="resources/topIcon.gif" alt="Back to top" class="top" /> Back to top <img src="resources/topIcon.gif" alt="Back to top" class="top" /></a></p>
+
+	<h1><a name="settings"></a>Settings </h1>
+
+		 Arguments = -d group2/group2.txt.gene_184.phy -s 3 -i -g 4 -f -BIC -tr 7 -o group2out/g2outgene_184.txt <br/>
+		 Input Alignment: "group2/group2.txt.gene_184.phy"<br/>
+		 NumTaxa = 22<br/>
+		 Length = 1,770<br/> 
+		 Phyml version = 3.0<br/>
+		 Phyml binary = PhyML_3.0_linux64<br/>
+		 Candidate models = 24<br/>
+		  number of substitution schemes = 3<br/>
+		  including models with equal/unequal base frequencies (+F)<br/>
+		  including models with/without a proportion of invariable sites (+I)<br/>
+		  including models with/without rate variation among sites (+G) (nCat = 4)<br/>
+		 Optimized free parameters (K) = Substitution parameters + 41 branch lengths + topology<br/>
+		 
+		 Base tree for likelihood calculations = Maximum Likelihood<br/>
+		 Tree topology search operation = NNI<br/>
+
+<p class="back-to-top"><a href="#" onclick="scrollTo(0,0);return false;" title="Back to top" class="top"><img src="resources/topIcon.gif" alt="Back to top" class="top" /> Back to top <img src="resources/topIcon.gif" alt="Back to top" class="top" /></a></p>
+
+<h1> <a name="results"></a>Model Optimization Results </h1>
+
+<div id="sorted-models">
+<table class="model-info">
+<tr><th> ID </th><th> Name </th><th> Partition </th><th> -lnL </th><th> p </th><th> fA </th><th> fC </th><th> fG </th><th> fT </th><th> ti/tv </th><th> R(a) </th><th> R(b) </th><th> R(c) </th><th> R(d) </th><th> R(e) </th><th> R(f) </th><th> p-inv </th><th> shape </th></tr>
+<tr><td> 1</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057438,((((I0120:0.00226558,I0121:0.00127523):0.00382919,(I0088:0.00359633,(I0118:0.00796077,((I0111:0.04550325,I0158:0.00632287):0.00167243,((I0122:0.00226374,I0123:0.00000005):0.00169691,(I0091:0.00169676,(I0086:0.00511183,I0124:0.00568086):0.00112515):0.00000005):0.00056546):0.00000005):0.00056509):0.00056541):0.00056567,(I0085:0.00226760,(I0125:0.00169998,((I0079:0.00000001,I0080:0.00000005):0.00226579,(I0078:0.00000010,(I0083:0.00000001,I0084:0.00000019):0.00283121):0.00283271):0.00169742):0.00000003):0.00000003):0.00057410,I0082:0.00509469):0.00056535):0.00395737);&useBranchLengths=true">JC</a></td><td> 000000 </td><td> 3832.9700 </td><td> 42 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td></tr>
+<tr><td> 2</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056661,(I0085:0.00229243,(I0125:0.00171281,(I0082:0.00518132,(((I0120:0.00228998,I0121:0.00128298):0.00389685,(I0088:0.00368281,(((I0122:0.00227815,I0123:0.00000002):0.00170505,(I0091:0.00170505,(I0086:0.00522877,I0124:0.00581787):0.00110335):0.00000002):0.00056771,(I0158:0.00817670,(I0111:0.05333958,I0118:0.00655309):0.00158974):0.00000002):0.00056583):0.00056728):0.00056830,((I0079:0.00000000,I0080:0.00000002):0.00229135,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00285662):0.00286619):0.00170774):0.00056154):0.00000004):0.00000002):0.00057186):0.00401709);&useBranchLengths=true">JC+I</a></td><td> 000000 </td><td> 3791.2752 </td><td> 43 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.8050 </td><td> - </td></tr>
+<tr><td> 3</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00058776,((((I0120:0.00233331,I0121:0.00130878):0.00396433,(I0088:0.00374020,(I0118:0.00827527,((I0111:0.05223789,I0158:0.00688706):0.00141564,((I0122:0.00232393,I0123:0.00000005):0.00173995,(I0091:0.00173995,(I0086:0.00531125,I0124:0.00590828):0.00113333):0.00000005):0.00057930):0.00000005):0.00057791):0.00057913):0.00058036,(I0085:0.00233584,(I0125:0.00174701,((I0079:0.00000001,I0080:0.00000005):0.00233458,(I0078:0.00000008,(I0083:0.00000001,I0084:0.00000018):0.00291180):0.00291971):0.00174175):0.00000003):0.00000003):0.00058645,I0082:0.00526815):0.00057896):0.00408220);&useBranchLengths=true">JC+G</a></td><td> 000000 </td><td> 3793.2696 </td><td> 43 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.0210 </td></tr>
+<tr><td> 4</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057499,(I0082:0.00518723,(((I0120:0.00228971,I0121:0.00128398):0.00389874,(I0088:0.00368675,(((I0122:0.00227821,I0123:0.00000004):0.00170629,(I0091:0.00170555,(I0086:0.00524469,I0124:0.00582729):0.00109901):0.00000002):0.00056782,(I0158:0.00818179,(I0111:0.05343223,I0118:0.00648799):0.00167138):0.00000003):0.00056473):0.00056980):0.00056864,(((I0079:0.00000000,I0080:0.00000004):0.00229833,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000007):0.00286150):0.00287402):0.00170789,(I0085:0.00229749,I0125:0.00171405):0.00000007):0.00000004):0.00057282):0.00056860):0.00401423);&useBranchLengths=true">JC+I+G</a></td><td> 000000 </td><td> 3790.9158 </td><td> 44 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.6220 </td><td> 0.6490 </td></tr>
+<tr><td> 5</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057799,((((I0120:0.00226789,I0121:0.00127644):0.00383285,(I0088:0.00359891,(I0118:0.00796987,((I0111:0.04556347,I0158:0.00632201):0.00167866,((I0122:0.00226524,I0123:0.00000005):0.00169810,(I0091:0.00169815,(I0086:0.00511507,I0124:0.00568453):0.00112668):0.00000004):0.00056586):0.00000004):0.00056549):0.00056604):0.00056636,(I0085:0.00226958,(I0125:0.00170152,((I0079:0.00000001,I0080:0.00000005):0.00226695,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00283311):0.00283481):0.00169960):0.00000003):0.00000003):0.00057818,I0082:0.00509573):0.00056593):0.00395762);&useBranchLengths=true">F81</a></td><td> 000000 </td><td> 3820.5357 </td><td> 45 </td><td> 0.2454 </td><td> 0.2962 </td><td> 0.2396 </td><td> 0.2189 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td></tr>
+<tr><td> 6</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056818,(I0085:0.00230397,(I0125:0.00172181,(I0082:0.00520587,(((I0120:0.00230305,I0121:0.00128912):0.00391943,(I0088:0.00370347,(((I0122:0.00228665,I0123:0.00000002):0.00171235,(I0091:0.00171278,(I0086:0.00525115,I0124:0.00584049):0.00111138):0.00000001):0.00056978,(I0158:0.00821280,(I0111:0.05417934,I0118:0.00670587):0.00148840):0.00000001):0.00056784):0.00057073):0.00057214,((I0079:0.00000000,I0080:0.00000002):0.00229873,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00286752):0.00287870):0.00171953):0.00056472):0.00000004):0.00000002):0.00057628):0.00403716);&useBranchLengths=true">F81+I</a></td><td> 000000 </td><td> 3778.3127 </td><td> 46 </td><td> 0.2438 </td><td> 0.2980 </td><td> 0.2391 </td><td> 0.2191 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.8080 </td><td> - </td></tr>
+<tr><td> 7</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059309,((((I0120:0.00234585,I0121:0.00131526):0.00398530,(I0088:0.00375956,(I0118:0.00832241,((I0111:0.05266511,I0158:0.00688918):0.00144765,((I0122:0.00233316,I0123:0.00000005):0.00174753,(I0091:0.00174785,(I0086:0.00533347,I0124:0.00593056):0.00114133):0.00000005):0.00058164):0.00000005):0.00058017):0.00058250):0.00058404,(I0085:0.00234717,(I0125:0.00175583,((I0079:0.00000001,I0080:0.00000005):0.00234231,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000018):0.00292348):0.00293242):0.00175304):0.00000004):0.00000004):0.00059404,I0082:0.00528975):0.00058213):0.00409847);&useBranchLengths=true">F81+G</a></td><td> 000000 </td><td> 3780.2476 </td><td> 46 </td><td> 0.2444 </td><td> 0.2978 </td><td> 0.2392 </td><td> 0.2186 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.0210 </td></tr>
+<tr><td> 8</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057941,(((((I0120:0.00230539,I0121:0.00129206):0.00392440,(I0088:0.00371162,(((I0091:0.00171418,(I0122:0.00228794,I0123:0.00000003):0.00171439):0.00000003,(I0086:0.00527078,I0124:0.00585621):0.00110745):0.00057015,(I0158:0.00822541,(I0111:0.05439887,I0118:0.00663830):0.00157708):0.00000003):0.00056705):0.00057385):0.00057283,(I0085:0.00230983,I0125:0.00172330):0.00000003):0.00000003,((I0079:0.00000000,I0080:0.00000003):0.00230523,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000008):0.00287221):0.00288701):0.00172071):0.00058097,I0082:0.00521378):0.00057284):0.00403462);&useBranchLengths=true">F81+I+G</a></td><td> 000000 </td><td> 3777.8520 </td><td> 47 </td><td> 0.2437 </td><td> 0.2981 </td><td> 0.2391 </td><td> 0.2191 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.7070 </td><td> 1.1900 </td></tr>
+<tr><td> 9</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057453,((((I0120:0.00227062,I0121:0.00127499):0.00384521,(I0088:0.00360059,(I0118:0.00797774,((I0111:0.04619379,I0158:0.00645159):0.00156354,((I0122:0.00226450,I0123:0.00000005):0.00169698,(I0091:0.00169685,(I0086:0.00512901,I0124:0.00569921):0.00111587):0.00000005):0.00056591):0.00000005):0.00056497):0.00056555):0.00056632,(I0085:0.00227120,(I0125:0.00170401,((I0079:0.00000001,I0080:0.00000005):0.00226981,(I0078:0.00000010,(I0083:0.00000001,I0084:0.00000019):0.00283384):0.00283640):0.00169808):0.00000003):0.00000003):0.00057379,I0082:0.00509850):0.00056553):0.00396377);&useBranchLengths=true">K80</a></td><td> 010010 </td><td> 3731.9339 </td><td> 43 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 4.5714 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td></tr>
+<tr><td> 10</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056481,(I0085:0.00229775,(I0125:0.00172929,(I0082:0.00519651,(((I0120:0.00231313,I0121:0.00126666):0.00398145,(I0088:0.00369838,(((I0122:0.00227259,I0123:0.00000002):0.00170042,(I0091:0.00170044,(I0086:0.00531872,I0124:0.00591253):0.00104261):0.00000002):0.00056732,(I0158:0.00824778,(I0111:0.05827271,I0118:0.00669423):0.00149804):0.00000002):0.00056343):0.00056648):0.00056828,((I0079:0.00000000,I0080:0.00000002):0.00230740,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00286403):0.00288096):0.00170759):0.00055332):0.00000003):0.00000001):0.00057919):0.00404222);&useBranchLengths=true">K80+I</a></td><td> 010010 </td><td> 3686.3820 </td><td> 44 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 5.2549 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.8110 </td><td> - </td></tr>
+<tr><td> 11</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059096,((((I0120:0.00236778,I0121:0.00130661):0.00405726,(I0088:0.00377820,(I0118:0.00838076,((I0111:0.05661914,I0158:0.00772250):0.00069591,((I0122:0.00233686,I0123:0.00000005):0.00174954,(I0091:0.00174955,(I0086:0.00541792,I0124:0.00602182):0.00109570):0.00000005):0.00058397):0.00000005):0.00058006):0.00058276):0.00058592,(I0085:0.00235775,(I0125:0.00176928,((I0079:0.00000001,I0080:0.00000005):0.00236351,(I0078:0.00000008,(I0083:0.00000001,I0084:0.00000018):0.00293826):0.00295168):0.00175301):0.00000003):0.00000003):0.00058784,I0082:0.00531143):0.00058288):0.00413075);&useBranchLengths=true">K80+G</a></td><td> 010010 </td><td> 3690.1669 </td><td> 44 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 4.9674 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.0210 </td></tr>
+<tr><td> 12</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057382,(I0082:0.00522674,(((I0120:0.00232338,I0121:0.00127832):0.00400711,(I0088:0.00372294,(((I0122:0.00228462,I0123:0.00000003):0.00170937,(I0091:0.00170940,(I0086:0.00537161,I0124:0.00598081):0.00103018):0.00000003):0.00057075,(I0158:0.00830239,(I0111:0.05943275,I0118:0.00664173):0.00161158):0.00000003):0.00056298):0.00057627):0.00057203,(((I0079:0.00000000,I0080:0.00000003):0.00233109,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000006):0.00288609):0.00291083):0.00170877,(I0085:0.00231665,I0125:0.00173541):0.00000002):0.00000003):0.00056796):0.00057495):0.00406725);&useBranchLengths=true">K80+I+G</a></td><td> 010010 </td><td> 3685.7474 </td><td> 45 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 5.2984 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.6930 </td><td> 0.9480 </td></tr>
+<tr><td> 13</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057912,((((I0120:0.00227769,I0121:0.00127835):0.00385705,(I0088:0.00360936,(I0118:0.00800398,((I0111:0.04637299,I0158:0.00645516):0.00157817,((I0122:0.00226946,I0123:0.00000005):0.00170097,(I0091:0.00170104,(I0086:0.00514072,I0124:0.00571167):0.00112022):0.00000004):0.00056716):0.00000004):0.00056623):0.00056748):0.00056837,(I0085:0.00227734,(I0125:0.00170946,((I0079:0.00000001,I0080:0.00000005):0.00227403,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00284015):0.00284322):0.00170461):0.00000003):0.00000003):0.00057975,I0082:0.00510871):0.00056735):0.00397101);&useBranchLengths=true">HKY</a></td><td> 010010 </td><td> 3718.0085 </td><td> 46 </td><td> 0.2454 </td><td> 0.2987 </td><td> 0.2395 </td><td> 0.2164 </td><td> 4.5915 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td></tr>
+<tr><td> 14</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056938,(I0085:0.00233393,(I0125:0.00175466,(I0082:0.00526210,(((I0120:0.00235561,I0121:0.00128476):0.00405937,(I0088:0.00376186,(((I0122:0.00229895,I0123:0.00000002):0.00172294,(I0091:0.00172382,(I0086:0.00539524,I0124:0.00599357):0.00106096):0.00000001):0.00057412,(I0158:0.00836137,(I0111:0.06123143,I0118:0.00695111):0.00140120):0.00000001):0.00056983):0.00057739):0.00058083,((I0079:0.00000000,I0080:0.00000002):0.00233075,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00289846):0.00292012):0.00174494):0.00056074):0.00000003):0.00000002):0.00059384):0.00410777);&useBranchLengths=true">HKY+I</a></td><td> 010010 </td><td> 3670.9381 </td><td> 47 </td><td> 0.2454 </td><td> 0.3007 </td><td> 0.2416 </td><td> 0.2123 </td><td> 5.3939 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.8170 </td><td> - </td></tr>
+<tr><td> 15</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059909,((((I0120:0.00239902,I0121:0.00132111):0.00411125,(I0088:0.00382334,(I0118:0.00849424,((I0111:0.05785716,I0158:0.00773435):0.00076353,((I0122:0.00235767,I0123:0.00000005):0.00176738,(I0091:0.00176805,(I0086:0.00546997,I0124:0.00607678):0.00111309):0.00000005):0.00058930):0.00000005):0.00058528):0.00059139):0.00059514,(I0085:0.00238452,(I0125:0.00179157,((I0079:0.00000001,I0080:0.00000005):0.00238127,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000018):0.00296491):0.00298128):0.00178159):0.00000004):0.00000004):0.00060222,I0082:0.00536839):0.00059102):0.00417443);&useBranchLengths=true">HKY+G</a></td><td> 010010 </td><td> 3675.0444 </td><td> 47 </td><td> 0.2454 </td><td> 0.3004 </td><td> 0.2408 </td><td> 0.2134 </td><td> 5.0333 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.0210 </td></tr>
+<tr><td> 16</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00055152,((I0082:0.00514918,((I0079:0.00000000,I0080:0.00000003):0.00227177,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000008):0.00291900):0.00302658):0.00122390):0.00066077,(((I0120:0.00236596,I0121:0.00129599):0.00408953,(I0088:0.00378461,(((I0091:0.00173355,(I0122:0.00230605,I0123:0.00000003):0.00173190):0.00000003,(I0086:0.00544559,I0124:0.00606547):0.00103896):0.00057717,(I0158:0.00841632,(I0111:0.06280586,I0118:0.00688152):0.00153620):0.00000003):0.00056956):0.00058749):0.00065502,(I0085:0.00235056,I0125:0.00176566):0.00000005):0.00000003):0.00109820):0.00415545);&useBranchLengths=true">HKY+I+G</a></td><td> 010010 </td><td> 3670.0367 </td><td> 48 </td><td> 0.2456 </td><td> 0.3011 </td><td> 0.2419 </td><td> 0.2114 </td><td> 5.4641 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 0.7030 </td><td> 0.9060 </td></tr>
+<tr><td> 17</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00056998,(I0082:0.00506016,(I0085:0.00225316,(((I0120:0.00225476,I0121:0.00126364):0.00381528,(I0088:0.00357644,(I0118:0.00791079,((I0111:0.04589985,I0158:0.00646764):0.00148505,((I0122:0.00224728,I0123:0.00000005):0.00168393,(I0091:0.00168387,(I0086:0.00508470,I0124:0.00564999):0.00111470):0.00000004):0.00056164):0.00000005):0.00056037):0.00056011):0.00056264,(I0125:0.00169315,((I0079:0.00000001,I0080:0.00000005):0.00225378,(I0078:0.00000010,(I0083:0.00000001,I0084:0.00000018):0.00281481):0.00281711):0.00168307):0.00000003):0.00000113):0.00056969):0.00055975):0.00393649);&useBranchLengths=true">SYM</a></td><td> 012345 </td><td> 3722.4460 </td><td> 47 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 2.2201 </td><td> 9.3346 </td><td> 0.6818 </td><td> 1.5578 </td><td> 16.5378 </td><td> 1.0000 </td><td> - </td><td> - </td></tr>
+<tr><td> 18</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056171,(((((I0120:0.00230899,I0121:0.00125336):0.00395009,(I0088:0.00367619,(((I0122:0.00226438,I0123:0.00000002):0.00169312,(I0091:0.00169289,(I0086:0.00525175,I0124:0.00583762):0.00109030):0.00000002):0.00056490,(I0158:0.00819746,(I0111:0.05691918,I0118:0.00656022):0.00155444):0.00000002):0.00056030):0.00055776):0.00057157,((I0079:0.00000000,I0080:0.00000002):0.00230221,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00285975):0.00287917):0.00168612):0.00055446,(I0082:0.00515586,I0085:0.00228840):0.00000001):0.00000003,I0125:0.00171887):0.00057116):0.00403330);&useBranchLengths=true">SYM+I</a></td><td> 012345 </td><td> 3679.4013 </td><td> 48 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 2.2744 </td><td> 11.2797 </td><td> 0.8914 </td><td> 1.8347 </td><td> 21.3460 </td><td> 1.0000 </td><td> 0.7960 </td><td> - </td></tr>
+<tr><td> 19</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00058261,(I0082:0.00524486,(((I0120:0.00234434,I0121:0.00128140):0.00400080,(I0088:0.00372975,(((I0122:0.00230736,I0123:0.00000005):0.00172641,(I0091:0.00172621,(I0086:0.00532190,I0124:0.00591498):0.00111880):0.00000003):0.00057609,((I0111:0.05514966,I0118:0.00656407):0.00166959,I0158:0.00830518):0.00000005):0.00057174):0.00056968):0.00058180,(I0085:0.00232776,(((I0079:0.00000001,I0080:0.00000005):0.00233908,(I0078:0.00000008,(I0083:0.00000001,I0084:0.00000017):0.00290880):0.00292458):0.00171962,I0125:0.00174913):0.00000004):0.00000004):0.00058744):0.00056804):0.00408793);&useBranchLengths=true">SYM+G</a></td><td> 012345 </td><td> 3680.5257 </td><td> 48 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 2.2659 </td><td> 10.8251 </td><td> 0.8422 </td><td> 1.8174 </td><td> 20.6744 </td><td> 1.0000 </td><td> - </td><td> 0.0220 </td></tr>
+<tr><td> 20</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056840,(I0082:0.00518616,(((I0120:0.00230805,I0121:0.00125903):0.00395990,(I0088:0.00369180,(I0118:0.00817517,((I0111:0.06016407,I0158:0.00823569):0.00000009,((I0122:0.00226984,I0123:0.00000003):0.00169674,(I0091:0.00169638,(I0086:0.00528590,I0124:0.00588665):0.00108034):0.00000002):0.00056745):0.00000002):0.00055624):0.00056626):0.00057183,(((I0079:0.00000000,I0080:0.00000004):0.00232493,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000010):0.00287859):0.00290558):0.00168109,(I0085:0.00230006,I0125:0.00172475):0.00000003):0.00000002):0.00057716):0.00055942):0.00404995);&useBranchLengths=true">SYM+I+G</a></td><td> 012345 </td><td> 3680.0515 </td><td> 49 </td><td> - </td><td> - </td><td> - </td><td> - </td><td> - </td><td> 2.3583 </td><td> 11.0885 </td><td> 0.8823 </td><td> 1.7017 </td><td> 21.1832 </td><td> 1.0000 </td><td> 0.6420 </td><td> 0.7060 </td></tr>
+<tr><td> 21</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057886,(I0082:0.00510875,(((I0120:0.00227945,I0121:0.00127668):0.00385802,(I0088:0.00361227,(I0118:0.00799996,((I0111:0.04647881,I0158:0.00651322):0.00151731,((I0122:0.00226912,I0123:0.00000005):0.00170068,(I0091:0.00170073,(I0086:0.00513422,I0124:0.00570527):0.00112746):0.00000005):0.00056716):0.00000005):0.00056593):0.00056651):0.00056918,(I0085:0.00227668,(((I0079:0.00000001,I0080:0.00000005):0.00227466,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00284211):0.00284525):0.00170301,I0125:0.00171085):0.00000004):0.00000004):0.00058130):0.00056604):0.00397406);&useBranchLengths=true">GTR</a></td><td> 012345 </td><td> 3709.5510 </td><td> 50 </td><td> 0.2511 </td><td> 0.2916 </td><td> 0.2457 </td><td> 0.2116 </td><td> - </td><td> 1.8711 </td><td> 8.5163 </td><td> 0.6748 </td><td> 1.3278 </td><td> 15.4216 </td><td> 1.0000 </td><td> - </td><td> - </td></tr>
+<tr><td> 22</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056827,((((I0120:0.00237005,I0121:0.00127704):0.00406523,(I0088:0.00376159,(((I0122:0.00230110,I0123:0.00000002):0.00172464,(I0091:0.00172561,(I0086:0.00534916,I0124:0.00594591):0.00112147):0.00000002):0.00057460,(I0158:0.00835889,(I0111:0.06105777,I0118:0.00690790):0.00143561):0.00000002):0.00056949):0.00057175):0.00058961,((I0079:0.00000000,I0080:0.00000002):0.00233751,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00290700):0.00293583):0.00173567):0.00056761,((I0082:0.00526585,I0085:0.00233804):0.00000001,I0125:0.00176027):0.00000003):0.00059013):0.00412321);&useBranchLengths=true">GTR+I</a></td><td> 012345 </td><td> 3664.2853 </td><td> 51 </td><td> 0.2504 </td><td> 0.2958 </td><td> 0.2465 </td><td> 0.2073 </td><td> - </td><td> 1.7434 </td><td> 9.7708 </td><td> 0.9068 </td><td> 1.4134 </td><td> 19.7940 </td><td> 1.0000 </td><td> 0.8060 </td><td> - </td></tr>
+<tr><td> 23</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059631,(I0082:0.00536404,(((I0120:0.00240613,I0121:0.00131050):0.00411272,(I0088:0.00381861,(((I0122:0.00235263,I0123:0.00000005):0.00176351,(I0091:0.00176425,(I0086:0.00542923,I0124:0.00603446):0.00115244):0.00000003):0.00058787,((I0111:0.05773165,I0118:0.00686902):0.00159187,I0158:0.00847872):0.00000004):0.00058315):0.00058502):0.00059900,(I0085:0.00238221,(((I0079:0.00000001,I0080:0.00000005):0.00238136,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00296571):0.00298754):0.00177156,I0125:0.00179314):0.00000004):0.00000004):0.00060996):0.00058272):0.00417997);&useBranchLengths=true">GTR+G</a></td><td> 012345 </td><td> 3666.0788 </td><td> 51 </td><td> 0.2507 </td><td> 0.2946 </td><td> 0.2463 </td><td> 0.2084 </td><td> - </td><td> 1.7559 </td><td> 9.3185 </td><td> 0.8324 </td><td> 1.4126 </td><td> 18.8526 </td><td> 1.0000 </td><td> - </td><td> 0.0220 </td></tr>
+<tr><td> 24</td><td><a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057689,(I0082:0.00532683,(((I0120:0.00238463,I0121:0.00129205):0.00410041,(I0088:0.00379770,(I0118:0.00846810,((I0111:0.06541127,I0158:0.00844542):0.00000018,((I0091:0.00173676,(I0122:0.00231382,I0123:0.00000003):0.00173469):0.00000002,(I0086:0.00540304,I0124:0.00603190):0.00111796):0.00057866):0.00000002):0.00056705):0.00058580):0.00059230,(((I0079:0.00000000,I0080:0.00000003):0.00236439,(I0078:0.00000004,(I0083:0.00000000,I0084:0.00000009):0.00293049):0.00297228):0.00174046,(I0085:0.00236049,I0125:0.00177490):0.00000004):0.00000002):0.00060486):0.00057674):0.00415920);&useBranchLengths=true">GTR+I+G</a></td><td> 012345 </td><td> 3664.3510 </td><td> 52 </td><td> 0.2500 </td><td> 0.2970 </td><td> 0.2466 </td><td> 0.2064 </td><td> - </td><td> 1.7713 </td><td> 9.5544 </td><td> 0.9116 </td><td> 1.2979 </td><td> 19.7789 </td><td> 1.0000 </td><td> 0.6980 </td><td> 0.9130 </td></tr>
+</table>
+</div><!--sorted-models-->
+  <div id="topologies">
+  <p>
+  There are 11 different topologies. The following table shows the models supporting each topology and the rank according to each Information Criterion, as well as Robinson-Foulds and Euclidean distances with the tree of the best-fit model.
+  </p>
+  <table class="topologies-info">
+  <tr><th class="col-id"> ID </th>
+      <th class="col-models"> Models </th>
+      <th class="col-topo"> Topology </th>
+      <th/>
+      <th> AIC </th>
+      <th> BIC </th>
+      <th> AICc </th>
+      <th> DT </th>
+  </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 0</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      JC+I F81+I K80+I HKY+I 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(I0085,(I0125,(I0082,(((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),((I0079,I0080),(I0078,(I0083,I0084)))))))));">(I0077,I0087,(I0081,(I0085,(I0125,(I0082,(((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),((I0079,I0080),(I0078,(I0083,I0084)))))))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.9301</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">4.4899e-03</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">1.0198e-05</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 1</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      SYM+I 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(((((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),((I0079,I0080),(I0078,(I0083,I0084)))),(I0082,I0085)),I0125)));">(I0077,I0087,(I0081,(((((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),((I0079,I0080),(I0078,(I0083,I0084)))),(I0082,I0085)),I0125)));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">1</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">4</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8.1552e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000e+00</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 2</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      GTR+I 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,((((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),((I0079,I0080),(I0078,(I0083,I0084)))),((I0082,I0085),I0125))));">(I0077,I0087,(I0081,((((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),((I0079,I0080),(I0078,(I0083,I0084)))),((I0082,I0085),I0125))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">2</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0002</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">4</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8.4261e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000e+00</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 3</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      JC+I+G K80+I+G 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),(((I0079,I0080),(I0078,(I0083,I0084))),(I0085,I0125))))));">(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),(I0158,(I0111,I0118))))),(((I0079,I0080),(I0078,(I0083,I0084))),(I0085,I0125))))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">3</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0006</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">6</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8.0342e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">3.5863e-06</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 4</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      SYM+G GTR+G 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),((I0111,I0118),I0158)))),(I0085,(((I0079,I0080),(I0078,(I0083,I0084))),I0125))))));">(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(((I0122,I0123),(I0091,(I0086,I0124))),((I0111,I0118),I0158)))),(I0085,(((I0079,I0080),(I0078,(I0083,I0084))),I0125))))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">4</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">6</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">7.8837e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">6.8415e-07</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 5</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      F81+I+G 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(((((I0120,I0121),(I0088,(((I0091,(I0122,I0123)),(I0086,I0124)),(I0158,(I0111,I0118))))),(I0085,I0125)),((I0079,I0080),(I0078,(I0083,I0084)))),I0082)));">(I0077,I0087,(I0081,(((((I0120,I0121),(I0088,(((I0091,(I0122,I0123)),(I0086,I0124)),(I0158,(I0111,I0118))))),(I0085,I0125)),((I0079,I0080),(I0078,(I0083,I0084)))),I0082)));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">5</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">7.8647e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000e+00</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 6</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      HKY+I+G 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,((I0082,((I0079,I0080),(I0078,(I0083,I0084)))),(((I0120,I0121),(I0088,(((I0091,(I0122,I0123)),(I0086,I0124)),(I0158,(I0111,I0118))))),(I0085,I0125)))));">(I0077,I0087,(I0081,((I0082,((I0079,I0080),(I0078,(I0083,I0084)))),(((I0120,I0121),(I0088,(((I0091,(I0122,I0123)),(I0086,I0124)),(I0158,(I0111,I0118))))),(I0085,I0125)))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">6</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0537</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8.5931e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000e+00</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 7</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      JC JC+G F81 F81+G K80 K80+G HKY HKY+G GTR 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,((((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0122,I0123),(I0091,(I0086,I0124))))))),(I0085,(I0125,((I0079,I0080),(I0078,(I0083,I0084)))))),I0082)));">(I0077,I0087,(I0081,((((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0122,I0123),(I0091,(I0086,I0124))))))),(I0085,(I0125,((I0079,I0080),(I0078,(I0083,I0084)))))),I0082)));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">7</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0154</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">10</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">7.7791e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">1.0110e-05</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 8</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      SYM 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(I0082,(I0085,(((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0122,I0123),(I0091,(I0086,I0124))))))),(I0125,((I0079,I0080),(I0078,(I0083,I0084)))))))));">(I0077,I0087,(I0081,(I0082,(I0085,(((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0122,I0123),(I0091,(I0086,I0124))))))),(I0125,((I0079,I0080),(I0078,(I0083,I0084)))))))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">10</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">7.1850e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000e+00</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 9</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      SYM+I+G 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0122,I0123),(I0091,(I0086,I0124))))))),(((I0079,I0080),(I0078,(I0083,I0084))),(I0085,I0125))))));">(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0122,I0123),(I0091,(I0086,I0124))))))),(((I0079,I0080),(I0078,(I0083,I0084))),(I0085,I0125))))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">9</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">10</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8.4444e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000e+00</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  <tr>
+    <td rowspan="5" class="col-id"> 10</td>
+    <td rowspan="5" class="col-models">
+    <div class="topo-scroll"> 
+      GTR+I+G 
+    </div>
+    </td>
+    <td rowspan="5" class="col-topo">
+    <div class="topo-scroll">
+      <a href="http://www.phylowidget.org/full/?tree=(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0091,(I0122,I0123)),(I0086,I0124)))))),(((I0079,I0080),(I0078,(I0083,I0084))),(I0085,I0125))))));">(I0077,I0087,(I0081,(I0082,(((I0120,I0121),(I0088,(I0118,((I0111,I0158),((I0091,(I0122,I0123)),(I0086,I0124)))))),(((I0079,I0080),(I0078,(I0083,I0084))),(I0085,I0125))))));</a>
+    </div>
+    </td>
+    <th>RANK</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">10</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>RF</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">12</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>AVG Distance</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">8.8130e-02</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+    <tr>
+    <th>Distance VAR</th>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank">0.0000e+00</td>
+      <td class="topo-rank"> - </td>
+      <td class="topo-rank"> - </td>
+    </tr>
+  </table>
+  </div><!--sorted-models-->
+<p class="back-to-top"><a href="#" onclick="scrollTo(0,0);return false;" title="Back to top" class="top"><img src="resources/topIcon.gif" alt="Back to top" class="top" /> Back to top <img src="resources/topIcon.gif" alt="Back to top" class="top" /></a></p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="selection">   
+<h1> <a name="bic"></a>BIC Selection Results </h1>
+<div class="selection-upper"> 
+	<div class="selection_best_model">
+		<h2 style="text-align: center;"> Model selected </h2>
+		<table class="model_info">
+		<tr><th>   Model </th><td colspan="2">HKY+I</tr>
+		<tr><th>   partition </th><td colspan="2"> 010010</tr>
+		<tr><th>   -lnL </th><td colspan="2"> 3670.9381</tr>
+		<tr><th>   K </th><td colspan="2"> 47</tr>
+		<tr><th>   freqA </th><td> 0.2454</td><th>   R(a) </th><td> - </td></tr>
+		<tr><th>   freqC </th><td> 0.3007</td><th>   R(b) </th><td> - </td></tr>
+		<tr><th>   freqG </th><td> 0.2416</td><th>   R(c) </th><td> - </td></tr>
+		<tr><th>   freqT </th><td> 0.2123</td><th>   R(d) </th><td> - </td></tr>
+		<tr><th>   ti/tv </th><td> 5.3939 </td><th>   R(e) </th><td> - </td></tr>
+		<tr><th></th><td></td><th>   R(f) </th><td> - </td></tr>
+		<tr><th>   p-inv </th><td> 0.8170</td><th>   gamma </th><td> - </td></tr>
+		</table>
+	</div> <!--selection_best_model-->
+<div class="selection_best_tree">
+
+	<h2 style="text-align: center;"> Best model tree </h2>
+	
+		<div class="newick-tree">
+		(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056938,(I0085:0.00233393,(I0125:0.00175466,(I0082:0.00526210,(((I0120:0.00235561,I0121:0.00128476):0.00405937,(I0088:0.00376186,(((I0122:0.00229895,I0123:0.00000002):0.00172294,(I0091:0.00172382,(I0086:0.00539524,I0124:0.00599357):0.00106096):0.00000001):0.00057412,(I0158:0.00836137,(I0111:0.06123143,I0118:0.00695111):0.00140120):0.00000001):0.00056983):0.00057739):0.00058083,((I0079:0.00000000,I0080:0.00000002):0.00233075,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00289846):0.00292012):0.00174494):0.00056074):0.00000003):0.00000002):0.00059384):0.00410777);
+		</div><!--best-tree-newick-->
+	<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056938,(I0085:0.00233393,(I0125:0.00175466,(I0082:0.00526210,(((I0120:0.00235561,I0121:0.00128476):0.00405937,(I0088:0.00376186,(((I0122:0.00229895,I0123:0.00000002):0.00172294,(I0091:0.00172382,(I0086:0.00539524,I0124:0.00599357):0.00106096):0.00000001):0.00057412,(I0158:0.00836137,(I0111:0.06123143,I0118:0.00695111):0.00140120):0.00000001):0.00056983):0.00057739):0.00058083,((I0079:0.00000000,I0080:0.00000002):0.00233075,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00289846):0.00292012):0.00174494):0.00056074):0.00000003):0.00000002):0.00059384):0.00410777);&useBranchLengths=true">Display best model tree in PhyloWidget</a>
+	</div><!--selection_best_tree-->
+</div><!--selection-upper-->
+
+<div class="selection-lower">
+<div class="selection_results">
+	<table class="selection_table">
+		<tr>
+		<th>Model</th><th> -lnL  </th><th>  K      </th><th>   BIC </th><th>delta</th><th>   weight</th><th> cumWeight</th>
+		</tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056938,(I0085:0.00233393,(I0125:0.00175466,(I0082:0.00526210,(((I0120:0.00235561,I0121:0.00128476):0.00405937,(I0088:0.00376186,(((I0122:0.00229895,I0123:0.00000002):0.00172294,(I0091:0.00172382,(I0086:0.00539524,I0124:0.00599357):0.00106096):0.00000001):0.00057412,(I0158:0.00836137,(I0111:0.06123143,I0118:0.00695111):0.00140120):0.00000001):0.00056983):0.00057739):0.00058083,((I0079:0.00000000,I0080:0.00000002):0.00233075,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00289846):0.00292012):0.00174494):0.00056074):0.00000003):0.00000002):0.00059384):0.00410777);&useBranchLengths=true">HKY+I</a> </td><td>3670.9381</td><td>47</td><td>7693.3767</td><td>0.0000</td><td>0.9167</td><td>0.9167</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00055152,((I0082:0.00514918,((I0079:0.00000000,I0080:0.00000003):0.00227177,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000008):0.00291900):0.00302658):0.00122390):0.00066077,(((I0120:0.00236596,I0121:0.00129599):0.00408953,(I0088:0.00378461,(((I0091:0.00173355,(I0122:0.00230605,I0123:0.00000003):0.00173190):0.00000003,(I0086:0.00544559,I0124:0.00606547):0.00103896):0.00057717,(I0158:0.00841632,(I0111:0.06280586,I0118:0.00688152):0.00153620):0.00000003):0.00056956):0.00058749):0.00065502,(I0085:0.00235056,I0125:0.00176566):0.00000005):0.00000003):0.00109820):0.00415545);&useBranchLengths=true">HKY+I+G</a> </td><td>3670.0367</td><td>48</td><td>7699.0528</td><td>5.6761</td><td>0.0537</td><td>0.9703</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059909,((((I0120:0.00239902,I0121:0.00132111):0.00411125,(I0088:0.00382334,(I0118:0.00849424,((I0111:0.05785716,I0158:0.00773435):0.00076353,((I0122:0.00235767,I0123:0.00000005):0.00176738,(I0091:0.00176805,(I0086:0.00546997,I0124:0.00607678):0.00111309):0.00000005):0.00058930):0.00000005):0.00058528):0.00059139):0.00059514,(I0085:0.00238452,(I0125:0.00179157,((I0079:0.00000001,I0080:0.00000005):0.00238127,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000018):0.00296491):0.00298128):0.00178159):0.00000004):0.00000004):0.00060222,I0082:0.00536839):0.00059102):0.00417443);&useBranchLengths=true">HKY+G</a> </td><td>3675.0444</td><td>47</td><td>7701.5893</td><td>8.2126</td><td>0.0151</td><td>0.9854</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056481,(I0085:0.00229775,(I0125:0.00172929,(I0082:0.00519651,(((I0120:0.00231313,I0121:0.00126666):0.00398145,(I0088:0.00369838,(((I0122:0.00227259,I0123:0.00000002):0.00170042,(I0091:0.00170044,(I0086:0.00531872,I0124:0.00591253):0.00104261):0.00000002):0.00056732,(I0158:0.00824778,(I0111:0.05827271,I0118:0.00669423):0.00149804):0.00000002):0.00056343):0.00056648):0.00056828,((I0079:0.00000000,I0080:0.00000002):0.00230740,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00286403):0.00288096):0.00170759):0.00055332):0.00000003):0.00000001):0.00057919):0.00404222);&useBranchLengths=true">K80+I</a> </td><td>3686.3820</td><td>44</td><td>7701.8284</td><td>8.4517</td><td>0.0134</td><td>0.9988</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057382,(I0082:0.00522674,(((I0120:0.00232338,I0121:0.00127832):0.00400711,(I0088:0.00372294,(((I0122:0.00228462,I0123:0.00000003):0.00170937,(I0091:0.00170940,(I0086:0.00537161,I0124:0.00598081):0.00103018):0.00000003):0.00057075,(I0158:0.00830239,(I0111:0.05943275,I0118:0.00664173):0.00161158):0.00000003):0.00056298):0.00057627):0.00057203,(((I0079:0.00000000,I0080:0.00000003):0.00233109,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000006):0.00288609):0.00291083):0.00170877,(I0085:0.00231665,I0125:0.00173541):0.00000002):0.00000003):0.00056796):0.00057495):0.00406725);&useBranchLengths=true">K80+I+G</a> </td><td>3685.7474</td><td>45</td><td>7708.0379</td><td>14.6612</td><td>0.0006</td><td>0.9994</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059096,((((I0120:0.00236778,I0121:0.00130661):0.00405726,(I0088:0.00377820,(I0118:0.00838076,((I0111:0.05661914,I0158:0.00772250):0.00069591,((I0122:0.00233686,I0123:0.00000005):0.00174954,(I0091:0.00174955,(I0086:0.00541792,I0124:0.00602182):0.00109570):0.00000005):0.00058397):0.00000005):0.00058006):0.00058276):0.00058592,(I0085:0.00235775,(I0125:0.00176928,((I0079:0.00000001,I0080:0.00000005):0.00236351,(I0078:0.00000008,(I0083:0.00000001,I0084:0.00000018):0.00293826):0.00295168):0.00175301):0.00000003):0.00000003):0.00058784,I0082:0.00531143):0.00058288):0.00413075);&useBranchLengths=true">K80+G</a> </td><td>3690.1669</td><td>44</td><td>7709.3982</td><td>16.0215</td><td>0.0003</td><td>0.9997</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056827,((((I0120:0.00237005,I0121:0.00127704):0.00406523,(I0088:0.00376159,(((I0122:0.00230110,I0123:0.00000002):0.00172464,(I0091:0.00172561,(I0086:0.00534916,I0124:0.00594591):0.00112147):0.00000002):0.00057460,(I0158:0.00835889,(I0111:0.06105777,I0118:0.00690790):0.00143561):0.00000002):0.00056949):0.00057175):0.00058961,((I0079:0.00000000,I0080:0.00000002):0.00233751,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00290700):0.00293583):0.00173567):0.00056761,((I0082:0.00526585,I0085:0.00233804):0.00000001,I0125:0.00176027):0.00000003):0.00059013):0.00412321);&useBranchLengths=true">GTR+I</a> </td><td>3664.2853</td><td>51</td><td>7709.9860</td><td>16.6093</td><td>0.0002</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059631,(I0082:0.00536404,(((I0120:0.00240613,I0121:0.00131050):0.00411272,(I0088:0.00381861,(((I0122:0.00235263,I0123:0.00000005):0.00176351,(I0091:0.00176425,(I0086:0.00542923,I0124:0.00603446):0.00115244):0.00000003):0.00058787,((I0111:0.05773165,I0118:0.00686902):0.00159187,I0158:0.00847872):0.00000004):0.00058315):0.00058502):0.00059900,(I0085:0.00238221,(((I0079:0.00000001,I0080:0.00000005):0.00238136,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00296571):0.00298754):0.00177156,I0125:0.00179314):0.00000004):0.00000004):0.00060996):0.00058272):0.00417997);&useBranchLengths=true">GTR+G</a> </td><td>3666.0788</td><td>51</td><td>7713.5730</td><td>20.1963</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057689,(I0082:0.00532683,(((I0120:0.00238463,I0121:0.00129205):0.00410041,(I0088:0.00379770,(I0118:0.00846810,((I0111:0.06541127,I0158:0.00844542):0.00000018,((I0091:0.00173676,(I0122:0.00231382,I0123:0.00000003):0.00173469):0.00000002,(I0086:0.00540304,I0124:0.00603190):0.00111796):0.00057866):0.00000002):0.00056705):0.00058580):0.00059230,(((I0079:0.00000000,I0080:0.00000003):0.00236439,(I0078:0.00000004,(I0083:0.00000000,I0084:0.00000009):0.00293049):0.00297228):0.00174046,(I0085:0.00236049,I0125:0.00177490):0.00000004):0.00000002):0.00060486):0.00057674):0.00415920);&useBranchLengths=true">GTR+I+G</a> </td><td>3664.3510</td><td>52</td><td>7717.5962</td><td>24.2195</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056171,(((((I0120:0.00230899,I0121:0.00125336):0.00395009,(I0088:0.00367619,(((I0122:0.00226438,I0123:0.00000002):0.00169312,(I0091:0.00169289,(I0086:0.00525175,I0124:0.00583762):0.00109030):0.00000002):0.00056490,(I0158:0.00819746,(I0111:0.05691918,I0118:0.00656022):0.00155444):0.00000002):0.00056030):0.00055776):0.00057157,((I0079:0.00000000,I0080:0.00000002):0.00230221,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00285975):0.00287917):0.00168612):0.00055446,(I0082:0.00515586,I0085:0.00228840):0.00000001):0.00000003,I0125:0.00171887):0.00057116):0.00403330);&useBranchLengths=true">SYM+I</a> </td><td>3679.4013</td><td>48</td><td>7717.7820</td><td>24.4053</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00058261,(I0082:0.00524486,(((I0120:0.00234434,I0121:0.00128140):0.00400080,(I0088:0.00372975,(((I0122:0.00230736,I0123:0.00000005):0.00172641,(I0091:0.00172621,(I0086:0.00532190,I0124:0.00591498):0.00111880):0.00000003):0.00057609,((I0111:0.05514966,I0118:0.00656407):0.00166959,I0158:0.00830518):0.00000005):0.00057174):0.00056968):0.00058180,(I0085:0.00232776,(((I0079:0.00000001,I0080:0.00000005):0.00233908,(I0078:0.00000008,(I0083:0.00000001,I0084:0.00000017):0.00290880):0.00292458):0.00171962,I0125:0.00174913):0.00000004):0.00000004):0.00058744):0.00056804):0.00408793);&useBranchLengths=true">SYM+G</a> </td><td>3680.5257</td><td>48</td><td>7720.0307</td><td>26.6540</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056840,(I0082:0.00518616,(((I0120:0.00230805,I0121:0.00125903):0.00395990,(I0088:0.00369180,(I0118:0.00817517,((I0111:0.06016407,I0158:0.00823569):0.00000009,((I0122:0.00226984,I0123:0.00000003):0.00169674,(I0091:0.00169638,(I0086:0.00528590,I0124:0.00588665):0.00108034):0.00000002):0.00056745):0.00000002):0.00055624):0.00056626):0.00057183,(((I0079:0.00000000,I0080:0.00000004):0.00232493,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000010):0.00287859):0.00290558):0.00168109,(I0085:0.00230006,I0125:0.00172475):0.00000003):0.00000002):0.00057716):0.00055942):0.00404995);&useBranchLengths=true">SYM+I+G</a> </td><td>3680.0515</td><td>49</td><td>7726.5611</td><td>33.1844</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057912,((((I0120:0.00227769,I0121:0.00127835):0.00385705,(I0088:0.00360936,(I0118:0.00800398,((I0111:0.04637299,I0158:0.00645516):0.00157817,((I0122:0.00226946,I0123:0.00000005):0.00170097,(I0091:0.00170104,(I0086:0.00514072,I0124:0.00571167):0.00112022):0.00000004):0.00056716):0.00000004):0.00056623):0.00056748):0.00056837,(I0085:0.00227734,(I0125:0.00170946,((I0079:0.00000001,I0080:0.00000005):0.00227403,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00284015):0.00284322):0.00170461):0.00000003):0.00000003):0.00057975,I0082:0.00510871):0.00056735):0.00397101);&useBranchLengths=true">HKY</a> </td><td>3718.0085</td><td>46</td><td>7780.0388</td><td>86.6621</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057453,((((I0120:0.00227062,I0121:0.00127499):0.00384521,(I0088:0.00360059,(I0118:0.00797774,((I0111:0.04619379,I0158:0.00645159):0.00156354,((I0122:0.00226450,I0123:0.00000005):0.00169698,(I0091:0.00169685,(I0086:0.00512901,I0124:0.00569921):0.00111587):0.00000005):0.00056591):0.00000005):0.00056497):0.00056555):0.00056632,(I0085:0.00227120,(I0125:0.00170401,((I0079:0.00000001,I0080:0.00000005):0.00226981,(I0078:0.00000010,(I0083:0.00000001,I0084:0.00000019):0.00283384):0.00283640):0.00169808):0.00000003):0.00000003):0.00057379,I0082:0.00509850):0.00056553):0.00396377);&useBranchLengths=true">K80</a> </td><td>3731.9339</td><td>43</td><td>7785.4534</td><td>92.0767</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057886,(I0082:0.00510875,(((I0120:0.00227945,I0121:0.00127668):0.00385802,(I0088:0.00361227,(I0118:0.00799996,((I0111:0.04647881,I0158:0.00651322):0.00151731,((I0122:0.00226912,I0123:0.00000005):0.00170068,(I0091:0.00170073,(I0086:0.00513422,I0124:0.00570527):0.00112746):0.00000005):0.00056716):0.00000005):0.00056593):0.00056651):0.00056918,(I0085:0.00227668,(((I0079:0.00000001,I0080:0.00000005):0.00227466,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00284211):0.00284525):0.00170301,I0125:0.00171085):0.00000004):0.00000004):0.00058130):0.00056604):0.00397406);&useBranchLengths=true">GTR</a> </td><td>3709.5510</td><td>50</td><td>7793.0387</td><td>99.6620</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00056998,(I0082:0.00506016,(I0085:0.00225316,(((I0120:0.00225476,I0121:0.00126364):0.00381528,(I0088:0.00357644,(I0118:0.00791079,((I0111:0.04589985,I0158:0.00646764):0.00148505,((I0122:0.00224728,I0123:0.00000005):0.00168393,(I0091:0.00168387,(I0086:0.00508470,I0124:0.00564999):0.00111470):0.00000004):0.00056164):0.00000005):0.00056037):0.00056011):0.00056264,(I0125:0.00169315,((I0079:0.00000001,I0080:0.00000005):0.00225378,(I0078:0.00000010,(I0083:0.00000001,I0084:0.00000018):0.00281481):0.00281711):0.00168307):0.00000003):0.00000113):0.00056969):0.00055975):0.00393649);&useBranchLengths=true">SYM</a> </td><td>3722.4460</td><td>47</td><td>7796.3926</td><td>103.0159</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056818,(I0085:0.00230397,(I0125:0.00172181,(I0082:0.00520587,(((I0120:0.00230305,I0121:0.00128912):0.00391943,(I0088:0.00370347,(((I0122:0.00228665,I0123:0.00000002):0.00171235,(I0091:0.00171278,(I0086:0.00525115,I0124:0.00584049):0.00111138):0.00000001):0.00056978,(I0158:0.00821280,(I0111:0.05417934,I0118:0.00670587):0.00148840):0.00000001):0.00056784):0.00057073):0.00057214,((I0079:0.00000000,I0080:0.00000002):0.00229873,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00286752):0.00287870):0.00171953):0.00056472):0.00000004):0.00000002):0.00057628):0.00403716);&useBranchLengths=true">F81+I</a> </td><td>3778.3127</td><td>46</td><td>7900.6472</td><td>207.2705</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056661,(I0085:0.00229243,(I0125:0.00171281,(I0082:0.00518132,(((I0120:0.00228998,I0121:0.00128298):0.00389685,(I0088:0.00368281,(((I0122:0.00227815,I0123:0.00000002):0.00170505,(I0091:0.00170505,(I0086:0.00522877,I0124:0.00581787):0.00110335):0.00000002):0.00056771,(I0158:0.00817670,(I0111:0.05333958,I0118:0.00655309):0.00158974):0.00000002):0.00056583):0.00056728):0.00056830,((I0079:0.00000000,I0080:0.00000002):0.00229135,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000015):0.00285662):0.00286619):0.00170774):0.00056154):0.00000004):0.00000002):0.00057186):0.00401709);&useBranchLengths=true">JC+I</a> </td><td>3791.2752</td><td>43</td><td>7904.1359</td><td>210.7592</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00059309,((((I0120:0.00234585,I0121:0.00131526):0.00398530,(I0088:0.00375956,(I0118:0.00832241,((I0111:0.05266511,I0158:0.00688918):0.00144765,((I0122:0.00233316,I0123:0.00000005):0.00174753,(I0091:0.00174785,(I0086:0.00533347,I0124:0.00593056):0.00114133):0.00000005):0.00058164):0.00000005):0.00058017):0.00058250):0.00058404,(I0085:0.00234717,(I0125:0.00175583,((I0079:0.00000001,I0080:0.00000005):0.00234231,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000018):0.00292348):0.00293242):0.00175304):0.00000004):0.00000004):0.00059404,I0082:0.00528975):0.00058213):0.00409847);&useBranchLengths=true">F81+G</a> </td><td>3780.2476</td><td>46</td><td>7904.5170</td><td>211.1403</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057941,(((((I0120:0.00230539,I0121:0.00129206):0.00392440,(I0088:0.00371162,(((I0091:0.00171418,(I0122:0.00228794,I0123:0.00000003):0.00171439):0.00000003,(I0086:0.00527078,I0124:0.00585621):0.00110745):0.00057015,(I0158:0.00822541,(I0111:0.05439887,I0118:0.00663830):0.00157708):0.00000003):0.00056705):0.00057385):0.00057283,(I0085:0.00230983,I0125:0.00172330):0.00000003):0.00000003,((I0079:0.00000000,I0080:0.00000003):0.00230523,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000008):0.00287221):0.00288701):0.00172071):0.00058097,I0082:0.00521378):0.00057284):0.00403462);&useBranchLengths=true">F81+I+G</a> </td><td>3777.8520</td><td>47</td><td>7907.2045</td><td>213.8278</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00058776,((((I0120:0.00233331,I0121:0.00130878):0.00396433,(I0088:0.00374020,(I0118:0.00827527,((I0111:0.05223789,I0158:0.00688706):0.00141564,((I0122:0.00232393,I0123:0.00000005):0.00173995,(I0091:0.00173995,(I0086:0.00531125,I0124:0.00590828):0.00113333):0.00000005):0.00057930):0.00000005):0.00057791):0.00057913):0.00058036,(I0085:0.00233584,(I0125:0.00174701,((I0079:0.00000001,I0080:0.00000005):0.00233458,(I0078:0.00000008,(I0083:0.00000001,I0084:0.00000018):0.00291180):0.00291971):0.00174175):0.00000003):0.00000003):0.00058645,I0082:0.00526815):0.00057896):0.00408220);&useBranchLengths=true">JC+G</a> </td><td>3793.2696</td><td>43</td><td>7908.1248</td><td>214.7481</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00057499,(I0082:0.00518723,(((I0120:0.00228971,I0121:0.00128398):0.00389874,(I0088:0.00368675,(((I0122:0.00227821,I0123:0.00000004):0.00170629,(I0091:0.00170555,(I0086:0.00524469,I0124:0.00582729):0.00109901):0.00000002):0.00056782,(I0158:0.00818179,(I0111:0.05343223,I0118:0.00648799):0.00167138):0.00000003):0.00056473):0.00056980):0.00056864,(((I0079:0.00000000,I0080:0.00000004):0.00229833,(I0078:0.00000003,(I0083:0.00000000,I0084:0.00000007):0.00286150):0.00287402):0.00170789,(I0085:0.00229749,I0125:0.00171405):0.00000007):0.00000004):0.00057282):0.00056860):0.00401423);&useBranchLengths=true">JC+I+G</a> </td><td>3790.9158</td><td>44</td><td>7910.8960</td><td>217.5193</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057799,((((I0120:0.00226789,I0121:0.00127644):0.00383285,(I0088:0.00359891,(I0118:0.00796987,((I0111:0.04556347,I0158:0.00632201):0.00167866,((I0122:0.00226524,I0123:0.00000005):0.00169810,(I0091:0.00169815,(I0086:0.00511507,I0124:0.00568453):0.00112668):0.00000004):0.00056586):0.00000004):0.00056549):0.00056604):0.00056636,(I0085:0.00226958,(I0125:0.00170152,((I0079:0.00000001,I0080:0.00000005):0.00226695,(I0078:0.00000006,(I0083:0.00000001,I0084:0.00000019):0.00283311):0.00283481):0.00169960):0.00000003):0.00000003):0.00057818,I0082:0.00509573):0.00056593):0.00395762);&useBranchLengths=true">F81</a> </td><td>3820.5357</td><td>45</td><td>7977.6144</td><td>284.2377</td><td>0.0000</td><td>1.0000</td></tr>
+		<tr><td>
+		<a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000001,I0087:0.00000001,(I0081:0.00057438,((((I0120:0.00226558,I0121:0.00127523):0.00382919,(I0088:0.00359633,(I0118:0.00796077,((I0111:0.04550325,I0158:0.00632287):0.00167243,((I0122:0.00226374,I0123:0.00000005):0.00169691,(I0091:0.00169676,(I0086:0.00511183,I0124:0.00568086):0.00112515):0.00000005):0.00056546):0.00000005):0.00056509):0.00056541):0.00056567,(I0085:0.00226760,(I0125:0.00169998,((I0079:0.00000001,I0080:0.00000005):0.00226579,(I0078:0.00000010,(I0083:0.00000001,I0084:0.00000019):0.00283121):0.00283271):0.00169742):0.00000003):0.00000003):0.00057410,I0082:0.00509469):0.00056535):0.00395737);&useBranchLengths=true">JC</a> </td><td>3832.9700</td><td>42</td><td>7980.0468</td><td>286.6701</td><td>0.0000</td><td>1.0000</td></tr>
+		 </table>
+</div><!--selection_results-->
+<div class="selection-caption">
+<table class="selection_table"><tr><td>
+		-lnL:</td><td>negative log likelihod
+		 </td> </tr><tr><td>
+		 K:</td><td>	number of estimated parameters
+		 </td> </tr><tr><td>
+		 BIC:</td><td>	Bayesian Information Criterion
+		 </td> </tr><tr><td>
+		 delta:	</td><td>BIC difference
+		 </td> </tr><tr><td>
+		 weight:</td><td>	BIC weight
+		 </td> </tr><tr><td>
+		 cumWeight:</td><td>cumulative BIC weight
+		 </td> </tr>
+	 </table>
+<h2>Confidence interval</h2>
+ <p class="confidence-list"> 
+There are 24 models in the 100.00% confidence interval:<br/>
+HKY+I HKY+I+G HKY+G K80+I K80+I+G K80+G GTR+I GTR+G GTR+I+G SYM+I SYM+G SYM+I+G HKY K80 GTR SYM F81+I JC+I F81+G F81+I+G JC+G JC+I+G F81 JC 
+</p>
+  </div><!--selection-caption-->
+  </div><!--selection-lower-->
+
+  <div class="selection-distances">
+    <div class="euclidean-img">
+    	<img class="distances-img" src="images/group2.txt.gene_184.phy.jmodeltest.1440563785279.html_eu_BIC.png"/><br/>
+    	Euclidean distances histogram from each model optimized tree to <a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056938,(I0085:0.00233393,(I0125:0.00175466,(I0082:0.00526210,(((I0120:0.00235561,I0121:0.00128476):0.00405937,(I0088:0.00376186,(((I0122:0.00229895,I0123:0.00000002):0.00172294,(I0091:0.00172382,(I0086:0.00539524,I0124:0.00599357):0.00106096):0.00000001):0.00057412,(I0158:0.00836137,(I0111:0.06123143,I0118:0.00695111):0.00140120):0.00000001):0.00056983):0.00057739):0.00058083,((I0079:0.00000000,I0080:0.00000002):0.00233075,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00289846):0.00292012):0.00174494):0.00056074):0.00000003):0.00000002):0.00059384):0.00410777);&useBranchLengths=true">HKY+I tree</a>.
+    </div>
+    <div class="rf-img">
+    	<img class="distances-img" src="images/group2.txt.gene_184.phy.jmodeltest.1440563785279.html_rf_BIC.png"/><br/>
+    	Robinson-Foulds distances histogram from the different topologies to <a href="http://www.phylowidget.org/full/?tree=(I0077:0.00000000,I0087:0.00000000,(I0081:0.00056938,(I0085:0.00233393,(I0125:0.00175466,(I0082:0.00526210,(((I0120:0.00235561,I0121:0.00128476):0.00405937,(I0088:0.00376186,(((I0122:0.00229895,I0123:0.00000002):0.00172294,(I0091:0.00172382,(I0086:0.00539524,I0124:0.00599357):0.00106096):0.00000001):0.00057412,(I0158:0.00836137,(I0111:0.06123143,I0118:0.00695111):0.00140120):0.00000001):0.00056983):0.00057739):0.00058083,((I0079:0.00000000,I0080:0.00000002):0.00233075,(I0078:0.00000002,(I0083:0.00000000,I0084:0.00000011):0.00289846):0.00292012):0.00174494):0.00056074):0.00000003):0.00000002):0.00059384):0.00410777);&useBranchLengths=false">HKY+I topology</a>.
+    </div>
+    <div style="clear:both;"></div>
+  </div><!--selection-distances-->
+
+
+<p class="back-to-top"><a href="#" onclick="scrollTo(0,0);return false;" title="Back to top" class="top"><img src="resources/topIcon.gif" alt="Back to top" class="top" /> Back to top <img src="resources/topIcon.gif" alt="Back to top" class="top" /></a></p>
+
+</div><!--selection-->
+
+
+
+
+
+
+
+
+
+</div><!--/content-->
+
+	</div><!--/page-->
+	</div><!--/clearfix-->
+
+</div><!--/container2-->
+</div><!--/container1-->
+
+<div id="footer">
+<div id="footerinner">
+<p class="poweredBy">
+<span class="buttons">
+<a href="http://code.google.com/p/jmodeltest2" title="Home" class="home"><img src="resources/homeIcon.gif" alt="Back to home" class="home" /></a> 
+<a href="#" onclick="scrollTo(0,0);return false;" title="Back to top" class="top"><img src="resources/topIcon.gif" alt="Back to top" class="top" /></a>
+</span>
+<a href="http://code.google.com/p/jmodeltest2" rel="external">jModelTest 2.1</a>. D.Darriba, G.L.Taboada, R.Doallo and D.Posada
+</p>
+<div id="contact">
+    <a href="https://groups.google.com/forum/#!forum/jmodeltest">Forum</a>
+	-
+	<a href="http://groups.google.com/group/jmodeltest">Discussion group</a>
+	-
+	<a href="mailto:ddarriba@udc.es">Contact</a>
+</div>
+ 
+</div><!--/footerinner-->
+</div><!--/footer-->
+
+</body>
+</html>
