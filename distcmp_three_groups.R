@@ -1,21 +1,20 @@
 library(ggplot2)
 
  
-BItree_nonclk <-read.table("/Users/Xin/Documents/Rat/data_analysis/BItre_complete/BI_nonclkdist.txt", header = T)  
+BItree_nonclk <-read.table("/Users/Xin/Documents/Ratsnake_project/input/treedistcmp_three_groups/BI_nonclkdist.txt", header = T)  
  
-BItree_ppdist <-read.table("/Users/Xin/Documents/Rat/data_analysis/BItre_complete/BI_ppdist.txt", header = T)  
+BItree_ppdist <-read.table("/Users/Xin/Documents/Ratsnake_project/input/treedistcmp_three_groups/BI_ppdist.txt", header = T)  
 
-BItree_rest <-read.table("/Users/Xin/Documents/Rat/data_analysis/BItre_complete/BI_restdist.txt", header = T)  
+BItree_rest <-read.table("/Users/Xin/Documents/Ratsnake_project/input/treedistcmp_three_groups/BI_restdist.txt", header = T)  
 head(BItree_nonclk)
 head(BItree_ppdist)
 head(BItree_rest)
-
-
-
-  
-
-
 nonclkqt<-BItree_nonclk[[5]]
+ppdistqt<-BItree_ppdist[[5]]
+restqt<-BItree_rest[[5]]
+
+
+
 quantile(nonclkqt)
 mean(nonclkqt)
 sd(nonclkqt)
@@ -25,7 +24,7 @@ plot(density(nonclkqt))
  
  
 
-ppdistqt<-BItree_ppdist[[5]]
+
 quantile(ppdistqt)
 mean(ppdistqt)
 sd(ppdistqt)
@@ -35,7 +34,7 @@ plot(density(ppdistqt))
 
  
 
-restqt<-BItree_rest[[5]]
+
 quantile(restqt)
 mean(restqt)
 sd(restqt)
@@ -68,7 +67,7 @@ geom_boxplot(width= 0.1, aes(fill=factor(V1))) +
                     name="Group") +
   scale_x_discrete( labels=c("non-clock","large_variation", "rest")) + 
   ylab("Normalized Triple Distances") + xlab("")
-ggsave("distcmp.tiff", dpi = 300)
+ggsave("/Users/Xin/Desktop/distcmp.png", dpi = 300)
 
  t.test(nonclkqt, restqt)
 

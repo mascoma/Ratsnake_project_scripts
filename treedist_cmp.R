@@ -8,17 +8,17 @@ ggplot(spedist, aes(x=reorder(name, TT), y=TT)) + geom_point(size = 3)  +
 ggsave("spetredist3.tiff", dpi = 300)
 
 
-dist<-read.csv("dist_sum.csv", header = T)
+dist<-read.csv("/Users/Xin/Documents/Ratsnake_project/input/dist_sum.csv", header = T)
  
 head(dist)
  
 ggplot(dist, aes(x=median, fill=type)) +
   geom_histogram(position="identity", alpha=0.4, binwidth = 0.005)+scale_fill_discrete(name="gene-tree type",
                      breaks=c("bsdist", "ppdist"),
-                     labels=c("BS tree", "PP tree")) +
+                     labels=c("BS", "PP")) +
           geom_vline(xintercept = 0.55, color = "coral3", linetype = "longdash") +
   
   geom_vline(xintercept = 0.42, color = "dodgerblue", linetype = "longdash") + 
-  xlab("Normalized tree distances") + ylab("Density")
+  xlab("Normalized within-loci tree distances") + ylab("Density")
 
-ggsave("bs_pp_dist.tiff", dpi = 300)
+ggsave("/Users/Xin/Documents/Ratsnake_project/manuscript/plylo+div/bs_pp_dist.tiff", dpi = 300)
